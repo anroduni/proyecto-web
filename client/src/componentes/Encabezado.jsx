@@ -37,7 +37,7 @@ const Encabezado = () => {
   return (
     <header className="bg-red-600 text-white p-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Universidad</h1>
+        <h1 className="text-2xl font-bold">Universidad Valhalla</h1>
 
         {/* Icono del botón hamburguesa en pantallas pequeñas */}
         <button 
