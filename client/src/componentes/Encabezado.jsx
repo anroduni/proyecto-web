@@ -59,13 +59,14 @@ const Encabezado = () => {
             <li><Link to="/nosotros" className="hover:underline">Nosotros</Link></li>
             <li><Link to="/login-alumnos" className="hover:underline">Portal Alumnos</Link></li>
             <li><Link to="/login-profesores" className="hover:underline">Portal Profesores</Link></li>
+            <li><Link to="/login-Administrativo" className="hover:underline">Portal Administrativo</Link></li>
           </ul>
         </nav>
       </div>
 
       {/* Menú desplegable para pantallas pequeñas */}
       {menuAbierto && (
-        <div className="lg:hidden bg-red-600">
+        <div className="lg:hidden bg-red-600" >
           <ul className="flex flex-col space-y-4 py-4 px-2">
             <li><Link to="/" className="text-white hover:underline">Inicio</Link></li>
             {/* Solo mostrar DesplegableCarreras una vez en el menú hamburguesa */}
@@ -77,6 +78,7 @@ const Encabezado = () => {
             <li><Link to="/nosotros" className="text-white hover:underline">Nosotros</Link></li>
             <li><Link to="/login-alumnos" className="text-white hover:underline">Portal Alumnos</Link></li>
             <li><Link to="/login-profesores" className="text-white hover:underline">Portal Profesores</Link></li>
+            <li><Link to="/login-Administrativo" className="text-white hover:underline">Portal Administrativo</Link></li>
           </ul>
         </div>
       )}

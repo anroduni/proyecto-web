@@ -16,6 +16,7 @@ const Titulo = () => {
     '/carreras-doctorados-fisica': 'Doctorado en Física',
     '/login-profesores': 'Inicio de Sesión - Profesores',
     '/login-alumnos': 'Inicio de Sesión - Alumnos',
+    '/login-Administrativo': 'Inicio de Sesión - Administrativo',
     '/nosotros': 'Sobre Nosotros',
   };
 

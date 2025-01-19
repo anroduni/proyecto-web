@@ -8,6 +8,7 @@ import Titulo from './componentes/Titulo';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import PortalProfe from './componentes/PortalProfe';
 import PortalAlum from './componentes/PortalAlum';
+import PortalAdmin from './componentes/PortalAdmin';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/carreras/:nombre" element={<DetallesCarrera />} />
             <Route path="/login-profesores" element={<FormularioLogin />} />
             <Route path="/login-alumnos" element={<FormularioLogin />} />
+            <Route path="/login-Administrativo" element={<FormularioLogin />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/carreras-ingenierias-industrial" element={<DetallesCarrera />} />
             <Route path="/carreras-ingenierias-sistemas" element={<DetallesCarrera />} />
@@ -38,7 +40,8 @@ const App = () => {
             <Route path="/carreras-doctorados-informatica" element={<DetallesCarrera />} />
             <Route path="/portal-doctorados-fisica" element={<DetallesCarrera />} />
             <Route path="/portal-profesores" element={<PortalProfe />} />
-            <Route path="/portal-alumnos" element={<PortalAlum />} />        
+            <Route path="/portal-alumnos" element={<PortalAlum />} />  
+            <Route path="/portal-Administrativo" element={<PortalAdmin />} />        
           </Routes>
         </div>
       </main>
