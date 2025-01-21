@@ -1,4 +1,7 @@
 import React from 'react';
+import visionImage from './vision.png';
+import misionImage from './mision.png';
+import valoresImage from './valores.png';
 
 const Nosotros = () => {
   return (
@@ -8,11 +11,11 @@ const Nosotros = () => {
       {/* Contenedor con grid para las secciones de visión, misión y valores */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* Visión */}
-        <div className="bg-gray-200 p-4 rounded-lg shadow">
+        <div className="bg-red-200 p-4 rounded-lg shadow">
           <h3 className="font-bold text-center mb-2">Visión</h3>
           <img 
-            src="https://source.unsplash.com/500x300/?education,vision" 
-            alt="Visión Universidad" 
+            src={visionImage}  // Aquí asignamos la imagen importada
+            alt="Visión Universidad"
             className="w-full h-40 object-cover mb-4 rounded-md"
           />
           <p className="text-center">
@@ -21,12 +24,12 @@ const Nosotros = () => {
         </div>
 
         {/* Misión */}
-        <div className="bg-gray-200 p-4 rounded-lg shadow">
+        <div className="bg-red-200 p-4 rounded-lg shadow">
           <h3 className="font-bold text-center mb-2">Misión</h3>
           <img 
-            src="https://source.unsplash.com/500x300/?education,mission" 
-            alt="Misión Universidad" 
-            className="w-full h-40 object-cover mb-4 rounded-md"
+            src={misionImage}  // Aquí asignamos la imagen importada
+            alt="Mision Universidad"
+            className="w-full h-40 object-cover mb-4 rounded-md"  
           />
           <p className="text-center">
             La misión de nuestra universidad es ofrecer una educación integral que prepare a los estudiantes para enfrentar los retos del futuro, promoviendo la investigación, el emprendimiento y la responsabilidad social.
@@ -34,11 +37,11 @@ const Nosotros = () => {
         </div>
 
         {/* Valores */}
-        <div className="bg-gray-200 p-4 rounded-lg shadow">
+        <div className="bg-red-200 p-4 rounded-lg shadow">
           <h3 className="font-bold text-center mb-2">Valores</h3>
           <img 
-            src="https://source.unsplash.com/500x300/?education,values" 
-            alt="Valores Universidad" 
+            src={valoresImage}  // Aquí asignamos la imagen importada
+            alt="Mision Universidad"
             className="w-full h-40 object-cover mb-4 rounded-md"
           />
           <p className="text-center">

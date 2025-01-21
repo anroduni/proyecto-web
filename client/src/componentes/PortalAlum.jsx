@@ -12,9 +12,9 @@ const PortalAlum = () => {
             <thead className="bg-gray-200">
               <tr>
                 <th className="border border-gray-300 px-4 py-2 text-left">Materia</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Block1</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Block2</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">TOTAL</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Bloque 1</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Bloque 2</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Promedio</th>
               </tr>
             </thead>
             <tbody>

@@ -23,8 +23,8 @@ const Titulo = () => {
   const titulo = titulosPorRuta[location.pathname] || 'Sección';
 
   return (
-    <div className="relative bg-yellow-100 border-4 border-yellow-700 rounded-lg shadow-lg mx-auto mt-4 max-w-4xl p-4 sm:p-6 lg:p-8 text-center">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-900">
+    <div className="w-full relative bg-red-900 border-4 border-red-800 shadow-lg  mt-4 p-2 sm:p-4 lg:p-6 text-center">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-stone-200">
         {titulo}
       </h1>
     </div>

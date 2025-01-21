@@ -5,24 +5,24 @@ const PortalAdmin = () => {
           Portal Administrativo
         </h2>
         <div className="bg-white p-6 shadow-lg rounded-lg max-w-4xl mx-auto">
-          <h3 className="text-xl font-semibold text-gray-700 mb-4">Datos del Alumno</h3>
+          <h3 className="text-xl font-semibold text-gray-700 mb-4">Datos de los alumnos</h3>
           <p className="text-gray-600 mb-4">Resumen semestral de materias y calificaciones</p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-300 text-sm sm:text-base">
               <thead className="bg-gray-200">
                 <tr>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Alumno</th>
                   <th className="border border-gray-300 px-4 py-2 text-left">Materia</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">Block1</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">Block2</th>
-                  <th className="border border-gray-300 px-4 py-2 text-left">TOTAL</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Promedio</th>
+                  <th className="border border-gray-300 px-4 py-2 text-left">Estado</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="hover:bg-gray-100">
+                  <td className="border border-gray-300 px-4 py-2">Miguel Perez</td>
                   <td className="border border-gray-300 px-4 py-2">Redes</td>
-                  <td className="border border-gray-300 px-4 py-2">80</td>
-                  <td className="border border-gray-300 px-4 py-2">85</td>
                   <td className="border border-gray-300 px-4 py-2">83</td>
+                  <td className="border border-gray-300 px-4 py-2">Aprovado</td>
                 </tr>
                 {/* Agrega más filas aquí si es necesario */}
               </tbody>

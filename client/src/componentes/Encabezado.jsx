@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DesplegableCarreras from './DesplegableCarreras';
+import logo from './logo.png';
 
 const categorias = [
   {
@@ -35,10 +36,12 @@ const Encabezado = () => {
   };
 
   return (
-    <header className="bg-red-600 text-white p-4">
+    <header className="bg-red-950 text-white p-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Universidad Valhalla</h1>
-
+        <div className="flex items-center space-x-2">
+          <img src={logo}  className="w-16 h-14" /> 
+          <h1 className="text-2xl font-bold">Universidad Valhalla</h1>
+        </div>
         {/* Icono del botón hamburguesa en pantallas pequeñas */}
         <button 
           className="lg:hidden text-white" 
@@ -49,6 +52,7 @@ const Encabezado = () => {
         </button>
 
         {/* Menú de navegación para pantallas grandes */}
+       
         <nav className="hidden lg:block">
           <ul className="flex lg:flex-row flex-col lg:space-x-6 space-y-4 lg:space-y-0">
             <li><Link to="/" className="hover:underline">Inicio</Link></li>
@@ -62,12 +66,14 @@ const Encabezado = () => {
             <li><Link to="/login-Administrativo" className="hover:underline">Portal Administrativo</Link></li>
           </ul>
         </nav>
+       
+        
       </div>
 
       {/* Menú desplegable para pantallas pequeñas */}
       {menuAbierto && (
-        <div className="lg:hidden bg-red-600" >
-          <ul className="flex flex-col space-y-4 py-4 px-2">
+        <div className="lg:hidden bg-red-950" >
+          <ul className="flex flex-col space-y-4 pt-4 px-2">
             <li><Link to="/" className="text-white hover:underline">Inicio</Link></li>
             {/* Solo mostrar DesplegableCarreras una vez en el menú hamburguesa */}
             {menuAbierto && (

@@ -14,9 +14,9 @@ const App = () => {
   return (
     <Router>
       <Encabezado />
-      <main className="min-h-screen bg-gray-100 mt-4 flex flex-col items-center">
+      <main className="min-h-screen bg-red-50 mt-4 flex flex-col items-center">
         {/* Contenedor principal responsivo */}
-        <div className="w-full max-w-screen-lg px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-screen-lg">
           <Titulo />
           <Routes>
             <Route
@@ -38,7 +38,7 @@ const App = () => {
             <Route path="/carreras-maestrias-ingenieria" element={<DetallesCarrera />} />
             <Route path="/carreras-maestrias-cienciascomputacionales" element={<DetallesCarrera />} />
             <Route path="/carreras-doctorados-informatica" element={<DetallesCarrera />} />
-            <Route path="/portal-doctorados-fisica" element={<DetallesCarrera />} />
+            <Route path="/carreras-doctorados-fisica" element={<DetallesCarrera />} />
             <Route path="/portal-profesores" element={<PortalProfe />} />
             <Route path="/portal-alumnos" element={<PortalAlum />} />  
             <Route path="/portal-Administrativo" element={<PortalAdmin />} />        

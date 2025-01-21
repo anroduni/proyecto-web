@@ -25,39 +25,35 @@ const DesplegableCarreras = ({ categorias }) => {
   };
 
   return (
-    <div
-      className="relative inline-block"
-      onMouseLeave={manejarMouseLeave}
-      style={{ zIndex: 50 }}
-    >
+    <div style={{ zIndex: 50 }}>
+      {/* Botón principal para pantallas grandes */}
       <button
         onMouseEnter={() => manejarMouseEnter(null)}
-        className="bg-red-600 text-white p-2 rounded md:inline-block"
+        className="bg-red-950 text-white rounded hidden md:inline-block"
       >
         Carreras
       </button>
 
       {/* Submenú para pantallas grandes */}
-      <div className="hidden md:block">
-        {submenuVisible && (
-          <ul className="absolute bg-red-700 text-white p-4 mt-2 rounded shadow-lg z-50">
+      {submenuVisible && (
+        <div className="hidden md:block relative inline-block" onMouseLeave={manejarMouseLeave}>
+          <ul className="absolute bg-red-800 text-white  rounded-bl rounded-br shadow-lg z-50">
             {categorias.map((categoria, index) => (
               <li
                 key={index}
                 onMouseEnter={() => manejarMouseEnter(categoria)}
-                onMouseLeave={manejarMouseLeave}
                 className="relative"
               >
-                <button className="block w-full text-left p-2 hover:bg-red-800">
+                <button className="block w-full text-left p-2 hover:bg-red-900">
                   {categoria.nombre}
                 </button>
                 {categoriaActiva === categoria && (
-                  <ul className="absolute left-full top-0 bg-red-800 text-white p-4 mt-2 rounded shadow-lg z-50">
+                  <ul className="absolute left-full top-0 bg-red-700 text-white p-2  rounded-bl rounded-br shadow-lg z-50">
                     {categoria.carreras.map((carrera, idx) => (
                       <li key={idx}>
                         <Link
                           to={carrera.ruta}
-                          className="block w-full text-left p-2 hover:bg-red-900"
+                          className="block w-full text-left p-2 hover:bg-red-800"
                         >
                           {carrera.nombre}
                         </Link>
@@ -68,35 +64,35 @@ const DesplegableCarreras = ({ categorias }) => {
               </li>
             ))}
           </ul>
-        )}
-      </div>
+        </div>
+      )}
 
-      {/* Submenú para pantallas pequeñas */}
+      {/* Menú para pantallas pequeñas */}
       <div className="md:hidden">
         <button
           onClick={toggleSubmenuMobile}
-          className="bg-red-600 text-white p-2 rounded w-full text-left"
+          className="bg-red-950 text-white  rounded-bl rounded-br shadow-lg w-full text-left"
         >
           Carreras
         </button>
 
         {submenuMobileVisible && (
-          <div className="bg-red-700 text-white p-4 mt-2 rounded shadow-lg z-50">
+          <div className="bg-red-900 w-full p-2  text-white rounded-bl rounded-br shadow-lg z-50">
             {categorias.map((categoria, index) => (
               <div key={index}>
                 <button
-                  className="block w-full text-left p-2 hover:bg-red-800"
+                  className="block w-full text-left  hover:bg-red-800"
                   onClick={() => setCategoriaActiva(categoria)}
                 >
                   {categoria.nombre}
                 </button>
                 {categoriaActiva === categoria && (
-                  <div className="ml-4">
+                  <div className="ml-2">
                     {categoria.carreras.map((carrera, idx) => (
                       <Link
                         to={carrera.ruta}
                         key={idx}
-                        className="block text-left p-2 hover:bg-red-900"
+                        className="block text-left pl-4 hover:bg-red-700"
                       >
                         {carrera.nombre}
                       </Link>

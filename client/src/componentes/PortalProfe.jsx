@@ -11,17 +11,17 @@ const PortalProfe = () => {
             <thead className="bg-gray-200">
               <tr>
                 <th className="border border-gray-300 px-4 py-2 text-left">Materia</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Block1</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">Block2</th>
-                <th className="border border-gray-300 px-4 py-2 text-left">TOTAL</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Grupo</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Día</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Horario</th>
               </tr>
             </thead>
             <tbody>
               <tr className="hover:bg-gray-100">
                 <td className="border border-gray-300 px-4 py-2">Redes</td>
-                <td className="border border-gray-300 px-4 py-2">90</td>
-                <td className="border border-gray-300 px-4 py-2">95</td>
-                <td className="border border-gray-300 px-4 py-2">93</td>
+                <td className="border border-gray-300 px-4 py-2">sistemas 6to</td>
+                <td className="border border-gray-300 px-4 py-2">Lunes</td>
+                <td className="border border-gray-300 px-4 py-2">14:00-16:00</td>
               </tr>
               {/* Puedes agregar más filas aquí */}
             </tbody>
