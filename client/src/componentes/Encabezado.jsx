@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DesplegableCarreras from './DesplegableCarreras';
-import logo from './logo.png';
+import logo from '../assets/images/logo.png';
 
 const categorias = [
   {

@@ -9,24 +9,20 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import PortalProfe from './componentes/PortalProfe';
 import PortalAlum from './componentes/PortalAlum';
 import PortalAdmin from './componentes/PortalAdmin';
+import VistaPrincipal from './componentes/VistaPrincipal';
 
 const App = () => {
   return (
     <Router>
       <Encabezado />
-      <main className="min-h-screen bg-red-50 mt-4 flex flex-col items-center">
+      <div>
+        <Titulo />
+        <main className="min-h-screen bg-red-50 mt-4 flex flex-col items-center">
         {/* Contenedor principal responsivo */}
         <div className="w-full max-w-screen-lg">
-          <Titulo />
+        
+        
           <Routes>
-            <Route
-              path="/"
-              element={
-                <h1 className="text-center py-10 text-xl sm:text-2xl lg:text-4xl">
-                  Explora nuestras secciones
-                </h1>
-              }
-            />
             <Route path="/carreras/:nombre" element={<DetallesCarrera />} />
             <Route path="/login-profesores" element={<FormularioLogin />} />
             <Route path="/login-alumnos" element={<FormularioLogin />} />
@@ -44,7 +40,18 @@ const App = () => {
             <Route path="/portal-Administrativo" element={<PortalAdmin />} />        
           </Routes>
         </div>
-      </main>
+    
+          <Routes>
+             <Route
+              path="/"
+              element={ 
+              <VistaPrincipal />
+                      }
+            />
+          </Routes>
+       
+        
+      </main></div>
       <PieDePagina />
     </Router>
   );

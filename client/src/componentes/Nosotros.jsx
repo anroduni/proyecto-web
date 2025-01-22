@@ -1,7 +1,7 @@
 import React from 'react';
-import visionImage from './vision.png';
-import misionImage from './mision.png';
-import valoresImage from './valores.png';
+import visionImage from '../assets/images/vision.png';
+import misionImage from '../assets/images/mision.png';
+import valoresImage from '../assets/images/valores.png';
 
 const Nosotros = () => {
   return (
