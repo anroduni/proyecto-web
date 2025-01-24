@@ -58,7 +58,7 @@ const DetallesCarrera = () => {
       competencias:"Liderazgo en equipos de investigación tecnológica, Toma de decisiones basadas en datos, Pensamiento crítico y resolución de problemas y Comunicación efectiva.",
       areas:"Algoritmos y optimización computacional, Inteligencia Artificial y Machine Learning, Computación en la nube y Big Data, Sistemas de bases de datos avanzados, Teoría de la computación y lenguajes formales y Ciberseguridad y criptografía.",
       duracion: "2 años",
-      pdf: "/pdf/doctorado-informatica.pdf",
+      pdf: "/pdf/maestrias-cienciascomputacionales.pdf",
     },
     '/carreras-doctorados-fisica': {
       nombre: "Perfil Profesional",
@@ -67,7 +67,7 @@ const DetallesCarrera = () => {
       competencias:"Liderazgo en investigación científica, Trabajo interdisciplinario, Comunicación de resultados científicos y Capacidad crítica y analítica.",
       areas:"Física teórica y matemática avanzada, Física experimental y desarrollo de instrumentos científicos, Física de materiales y nanofísica, Física de partículas y cosmología, Física computacional y simulación numérica y Energías renovables y física aplicada.",
       duracion: "7 años",
-      pdf: "/pdf/doctorado-informatica.pdf",
+      pdf: "/pdf/doctorado-fisica.pdf",
     },
 
     // Puedes agregar más rutas aquí
