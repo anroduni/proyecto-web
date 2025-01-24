@@ -19,6 +19,9 @@ const FormularioLogin = () => {
     } else if (usuario === 'admin' && contraseña === '1234') {
       // Redirigir a portal de alumnos
       navigate('/portal-Administrativo');
+    } else if (usuario === 'owner' && contraseña === '1234') {
+      // Redirigir a portal de alumnos
+      navigate('/portal-Owner');
     } else {
       alert('Credenciales incorrectas');
     }

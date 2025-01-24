@@ -10,6 +10,7 @@ import PortalProfe from './componentes/PortalProfe';
 import PortalAlum from './componentes/PortalAlum';
 import PortalAdmin from './componentes/PortalAdmin';
 import VistaPrincipal from './componentes/VistaPrincipal';
+import PortalOwner from './componentes/PortalOwner';
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/portal-profesores" element={<PortalProfe />} />
             <Route path="/portal-alumnos" element={<PortalAlum />} />  
             <Route path="/portal-Administrativo" element={<PortalAdmin />} />        
+            <Route path="/portal-owner" element={<PortalOwner />} />        
           </Routes>
         </div>
     
