@@ -52,14 +52,12 @@ const PortalProf = () => {
                 <th className="px-4 py-2">Nombre</th>
                 <th className="px-4 py-2">Parcial 1</th>
                 <th className="px-4 py-2">Parcial 2</th>
-                <th className="px-4 py-2">Parcial 3</th>
                 <th className="px-4 py-2">Final</th>
               </tr>
             </thead>
             <tbody>
               <tr className="hover:bg-gray-100">
                 <td className="px-4 py-2 border">Juan Perez</td>
-                <td className="px-4 py-2 border">10</td>
                 <td className="px-4 py-2 border">10</td>
                 <td className="px-4 py-2 border">10</td>
                 <td className="px-4 py-2 border">10</td>
@@ -90,7 +88,7 @@ const PortalProf = () => {
                 <option value="Parciales">Seleccionar Parcial</option>
                 <option value="Parcial1">Parcial 1</option>
                 <option value="Parcial2">Parcial 2</option>
-                <option value="Parcial3">Parcial 3</option>
+                <option value="Parcial2">Final</option>
               </select>
               <input
                 type="number"
@@ -99,12 +97,15 @@ const PortalProf = () => {
               />
 
             </div>
+            <div className="flex justify-end">
             <button
               type="submit"
               className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
             >
               Guardar
             </button>
+            </div>
+            
           </form>
         </section>
         
@@ -119,7 +120,6 @@ const PortalProf = () => {
                 <th className="px-4 py-2">Nombre</th>
                 <th className="px-4 py-2">Parcial 1</th>
                 <th className="px-4 py-2">Parcial 2</th>
-                <th className="px-4 py-2">Parcial 3</th>
                 <th className="px-4 py-2">Final</th>
               </tr>
             </thead>
@@ -127,7 +127,6 @@ const PortalProf = () => {
               <tr className="hover:bg-gray-100">
                 <td className="px-4 py-2 border">Redes</td>
                 <td className="px-4 py-2 border">Juan Perez</td>
-                <td className="px-4 py-2 border">10</td>
                 <td className="px-4 py-2 border">10</td>
                 <td className="px-4 py-2 border">10</td>
                 <td className="px-4 py-2 border">10</td>
