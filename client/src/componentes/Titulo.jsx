@@ -20,7 +20,9 @@ const Titulo = () => {
     '/nosotros': 'Sobre Nosotros',
     '/portal-alumnos':'Portal del Alumno',
     '/portal-profesores':'Portal del Profesor',
-    '/portal-Administrativo':'Portal Administrativo',
+    '/portal-administrativo':'Portal Administrativo',
+    '/portal-owner':'Portal owner',
+
 
   };
 

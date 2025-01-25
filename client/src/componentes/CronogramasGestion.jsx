@@ -13,18 +13,16 @@ const CronogramasGestion = () => {
   const [gruposDisponibles] = useState(["1A", "1B", "2A", "2B"]); // Ejemplo: lista de grupos existentes.
 
   const agregarEvento = () => {
-    if (
-      nuevoCronograma.grupo === "" ||
-      nuevoCronograma.evento.trim() === "" ||
-      nuevoCronograma.fecha === "" ||
-      nuevoCronograma.horaInicio === "" ||
-      nuevoCronograma.horaFin === ""
-    ) {
-      alert("Todos los campos son obligatorios.");
+    const { grupo, evento, fecha, horaInicio, horaFin } = nuevoCronograma;
+
+    // Validación de campos
+    if (!grupo || !evento.trim() || !fecha || !horaInicio || !horaFin) {
+      alert("Por favor, completa todos los campos.");
       return;
     }
 
     setCronogramas([...cronogramas, nuevoCronograma]);
+    // Limpiar formulario
     setNuevoCronograma({
       grupo: "",
       evento: "",
@@ -35,8 +33,8 @@ const CronogramasGestion = () => {
   };
 
   return (
-    <section className="bg-white p-6 shadow rounded-lg">
-      <h3 className="text-xl font-semibold text-gray-700 mb-4">
+    <section className="bg-white shadow rounded-lg p-6">
+      <h3 className="text-xl font-semibold text-gray-700 mb-6">
         Gestión de Cronogramas y Horarios
       </h3>
 

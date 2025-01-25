@@ -30,7 +30,7 @@ const UsuariosGestion = () => {
   };
 
   return (
-    <section className="bg-white p-6 shadow rounded-lg">
+    <section className="bg-white shadow rounded-lg">
       <h3 className="text-xl font-semibold text-gray-700 mb-4">Gestión de Usuarios</h3>
       
       {/* Formulario para agregar usuarios */}
@@ -142,8 +142,8 @@ const GestionGrupos = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <div className="max-w-4xl mx-auto bg-white p-6 shadow rounded-lg">
+    <div>
+      <div className=" mx-auto bg-white p-6 shadow rounded-lg">
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">Gestión de Grupos</h2>
 
         {/* Formulario de creación de grupos */}
